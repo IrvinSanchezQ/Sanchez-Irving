@@ -1,0 +1,16 @@
+<link rel="stylesheet" type="text/css" href="./lista-contactos.component.css" media="screen" />
+
+<h1>lista de contactos</h1>  
+<div *ngFor ="let contactos of contactos" style="width: 18rem;">
+<div class="card" >
+    <div class="card-header">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{contactos.nombre}} ({{contactos.genero}})</h5>
+      <p class="card-text">{{contactos.descripcion}}</p>
+      <a href="#" class="btn btn-primary">ver mas detalles</a>
+    </div>
+  </div>
+  <br>
+</div>
+
